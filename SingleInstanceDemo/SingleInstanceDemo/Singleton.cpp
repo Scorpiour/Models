@@ -127,7 +127,7 @@ void* SingletonHandle::retrieveInnerMessage(void* ptr){
 		::memset(&remoteaddr,0,sizeof(remoteaddr));
 
 		localaddr.sin_family		= AF_INET;
-		localaddr.sin_port			= htons(28571);
+		localaddr.sin_port			= htons(20000);
 		localaddr.sin_addr.s_addr	= INADDR_ANY;
 
 		if(SOCKET_ERROR==::bind(s,(sockaddr*)(&localaddr),sizeof(sockaddr_in))){
